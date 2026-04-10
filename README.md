@@ -18,4 +18,4 @@ Recognised as a rising star in the 31st edition of the *IFLR1000* finance and co
 
 ---
 
-[Call Me](tel:+447856452538) | [Direct Email](mailto:projectakindele@gmail.com)
+*[📞 Call Me: +44 7856 452538](tel:+447856452538)* | *[✉️ Direct Email](mailto:projectakindele@gmail.com)*
