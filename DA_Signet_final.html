@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DA Signet</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #e8e5e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    gap: 40px;
+  }
+
+  .preview-label {
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+
+  /* Show on light background */
+  .preview-light {
+    background: #ffffff;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #d8d5d0;
+  }
+
+  /* Show on dark background */
+  .preview-dark {
+    background: #2a2a2a;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #444;
+  }
+
+  .previews {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dl-btn {
+    padding: 12px 36px;
+    background: transparent;
+    color: #555;
+    font-family: Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .dl-btn:hover { background: #2a2a2a; color: #f0f0f0; border-color: #2a2a2a; }
+
+  .note {
+    font-size: 12px;
+    font-style: italic;
+    color: #aaa;
+    text-align: center;
+    max-width: 340px;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<p class="preview-label">D · A — Signet Monogram</p>
+
+<div class="previews">
+  <div class="preview-light">
+    <p class="preview-label" style="color:#ccc;">On white</p>
+    <svg id="signet" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="180" height="180">
+      <!-- Transparent background - no rect -->
+      <!-- Outer circle -->
+      <circle cx="100" cy="100" r="92" fill="none" stroke="#7a7672" stroke-width="1.2"/>
+      <!-- Inner circle -->
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#b0ada8" stroke-width="0.5"/>
+      <!-- Cardinal tick marks - outer to inner gap -->
+      <line x1="100" y1="8"  x2="100" y2="20" stroke="#7a7672" stroke-width="1.1"/>
+      <line x1="100" y1="180" x2="100" y2="192" stroke="#7a7672" stroke-width="1.1"/>
+      <line x1="8"   y1="100" x2="20"  y2="100" stroke="#7a7672" stroke-width="1.1"/>
+      <line x1="180" y1="100" x2="192" y2="100" stroke="#7a7672" stroke-width="1.1"/>
+      <!-- DA letters centred -->
+      <text x="100" y="118"
+            text-anchor="middle"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="68"
+            font-weight="normal"
+            fill="#5a5754"
+            letter-spacing="14">DA</text>
+    </svg>
+  </div>
+
+  <div class="preview-dark">
+    <p class="preview-label" style="color:#666;">On dark</p>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="180" height="180">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="#9a9590" stroke-width="1.2"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#6a6662" stroke-width="0.5"/>
+      <line x1="100" y1="8"   x2="100" y2="20"  stroke="#9a9590" stroke-width="1.1"/>
+      <line x1="100" y1="180" x2="100" y2="192" stroke="#9a9590" stroke-width="1.1"/>
+      <line x1="8"   y1="100" x2="20"  y2="100" stroke="#9a9590" stroke-width="1.1"/>
+      <line x1="180" y1="100" x2="192" y2="100" stroke="#9a9590" stroke-width="1.1"/>
+      <text x="100" y="118"
+            text-anchor="middle"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="68"
+            font-weight="normal"
+            fill="#c8c5c0"
+            letter-spacing="14">DA</text>
+    </svg>
+  </div>
+</div>
+
+<a class="dl-btn" href="#" onclick="dlSVG(); return false;">Download SVG (transparent)</a>
+
+<p class="note">Transparent background — paste directly into your Word footer. Scales cleanly at any size.</p>
+
+<script>
+function dlSVG() {
+  const svg = document.getElementById('signet');
+  const clone = svg.cloneNode(true);
+  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  // ensure truly transparent - no background rect
+  const str = '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(clone);
+  const blob = new Blob([str], { type: 'image/svg+xml' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'DA_Signet.svg';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
