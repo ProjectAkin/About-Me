@@ -18,5 +18,4 @@ Recognised as a rising star in the 31st edition of the *IFLR1000* finance and co
 
 ---
 
-### Connect with Me
-[LinkedIn Profile](https://www.linkedin.com) | [Direct Email](mailto:your-email@example.com)
+[Call Me](tel:+447856452538) | [Direct Email](mailto:projectakindele@gmail.com)
