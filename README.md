@@ -1,2 +1,1 @@
-# About-Me
-Expert advisory platform for cross-border corporate, commercial, and leveraged finance transactions across diverse global industries.
+# Expert Advisory Platform for Cross-Border Corporate, Commercial, Investment & Financing (Leveraged & Investment Grade) Transactions Cutting Across Diverse Industries.
