@@ -1,8 +1,7 @@
 ![Banner](Modern%20skyscrapers.jpg)
 
-<p align="center">
-  <img src="Logo Design Jpg" width="150">
-</p>
+
+  <img src="Logo%20Design%20Jpg.jpg" width="150">
 
 # Oladimeji Akindele
 ### Expert Advisor | Corporate, Commercial & Investment Finance
