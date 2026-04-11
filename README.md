@@ -1,3 +1,5 @@
+![Header Banner](Modern%20skycrappers.avif)
+
 # Oladimeji Akindele
 ### Expert Advisor | Corporate, Commercial & Investment Finance
 
