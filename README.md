@@ -16,8 +16,10 @@ Recognised as a rising star in the 31st edition of the *IFLR1000* finance and co
 ---
 
 ### Professional Background
-* *Role 1* | Company Name
-* *Role 2* | Company Name
+* *Group Legal Manager* at Flour Mills of Nigeria Plc (an NSE30 company)
+* * *Senior Legal Counsel* at AA&R Investments Limited
+* * *Team Lead* at The New Practice (TNP)
+
 ---
 
 *[📞 Call Me: +44 7856 452538](tel:+447856452538)* | *[✉️ Direct Email](mailto:projectakindele@gmail.com)*
