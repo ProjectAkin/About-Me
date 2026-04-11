@@ -1,4 +1,4 @@
-Modern skyscrapers.jpg
+![Banner](Modern%20skyscrapers.jpg)
 
 # Oladimeji Akindele
 ### Expert Advisor | Corporate, Commercial & Investment Finance
